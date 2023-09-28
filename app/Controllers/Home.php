@@ -8,4 +8,12 @@ class Home extends BaseController
     {
         return view('index');
     }
+    public function product()
+    {
+      return view('include/product');
+    }
+    public function Home()
+    {
+      return view('source/index');
+    }
 }

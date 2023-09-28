@@ -1,0 +1,76 @@
+CRITICAL - 2023-09-28 16:00:27 --> Cannot redeclare App\Controllers\Home::product()
+in APPPATH\Controllers\Home.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-28 16:01:15 --> Cannot redeclare App\Controllers\Home::index()
+in APPPATH\Controllers\Home.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-28 16:02:51 --> Invalid file: "include/Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('include/Home.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('include/Home', [], true)
+ 3 APPPATH\Controllers\Home.php(17): view('include/Home')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->Home()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\ecomm\\public\\index.php')
+CRITICAL - 2023-09-28 16:03:36 --> Invalid file: "include.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('include.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('include', [], true)
+ 3 APPPATH\Controllers\Home.php(17): view('include')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->Home()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\ecomm\\public\\index.php')
+CRITICAL - 2023-09-28 16:03:51 --> Invalid file: "include/Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('include/Home.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('include/Home', [], true)
+ 3 APPPATH\Controllers\Home.php(17): view('include/Home')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->Home()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\ecomm\\public\\index.php')
+CRITICAL - 2023-09-28 16:04:08 --> Invalid file: "include/Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('include/Home.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('include/Home', [], true)
+ 3 APPPATH\Controllers\Home.php(17): view('include/Home')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->Home()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\ecomm\\public\\index.php')
+CRITICAL - 2023-09-28 16:06:07 --> Invalid file: "include/Home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('include/Home.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('include/Home', [], true)
+ 3 APPPATH\Controllers\Home.php(17): view('include/Home')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->Home()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\ecomm\\public\\index.php')
+CRITICAL - 2023-09-28 16:07:23 --> Invalid file: "include/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('include/index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('include/index', [], true)
+ 3 APPPATH\Controllers\Home.php(17): view('include/index')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->Home()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\ecomm\\public\\index.php')
+CRITICAL - 2023-09-28 16:10:10 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Home.php(17): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->Home()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\ecomm\\public\\index.php')

@@ -22,9 +22,9 @@ https://templatemo.com/tm-546-sixteen-clothing
 -->
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="<?php echo base_url(assets/css/fontawesome.css)?>">
+    <link rel="stylesheet" href="<?php echo base_url(assets/css/templatemo-sixteen.css)?>">
+    <link rel="stylesheet" href="<?php echo base_url(assets/css/owl.css)?>">
 
   </head>
 
@@ -37,7 +37,7 @@ https://templatemo.com/tm-546-sixteen-clothing
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
@@ -54,7 +54,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <a class="nav-link" href="index.html">Home
                   <span class="sr-only">(current)</span>
                 </a>
-              </li> 
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="products.html">Our Products</a>
               </li>
@@ -114,7 +114,7 @@ https://templatemo.com/tm-546-sixteen-clothing
       </div>
     </div>
 
-    
+
     <div class="team-members">
       <div class="container">
         <div class="row">
@@ -317,23 +317,23 @@ https://templatemo.com/tm-546-sixteen-clothing
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="1">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="2">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="3">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="4">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="5">
               </div>
-              
+
               <div class="client-item">
                 <img src="assets/images/client-01.png" alt="6">
               </div>
@@ -343,14 +343,14 @@ https://templatemo.com/tm-546-sixteen-clothing
       </div>
     </div>
 
-    
+
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
               <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-            
+
             - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
             </div>
           </div>
@@ -372,7 +372,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <script src="assets/js/accordions.js"></script>
 
 
-    <script language = "text/Javascript"> 
+    <script language = "text/Javascript">
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
       function clearField(t){                   //declaring the array outside of the
       if(! cleared[t.id]){                      // function makes it static and global
