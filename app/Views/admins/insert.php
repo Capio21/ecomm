@@ -15,15 +15,16 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(135deg, #ffcccc, #000);
+            background: linear-gradient(125deg, #ffcccc, #000);
         }
 
         /* Style the form and table */
         .form-container, .table-container {
-            background-color: rgba(255, 255, 255, 0.9); /* Light red background with transparency */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: rgba(155, 155, 155, 0.9); /* Light red background with transparency */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 0 10px rgba(0, 1, 4, 0.9);
+
         }
     </style>
 </head>
@@ -53,7 +54,10 @@
                 <label for="reviews">Reviews</label>
                 <input type="number" name="reviews" id="reviews" class="form-control" required>
             </div>
+
+            <br>
             <button type="submit" class="btn btn-primary" id="submitBtn">Insert Product</button>
+
             <button type="button" class="btn btn-secondary" id="cancelBtn" onclick="cancelEdit()">Cancel</button>
         </form>
     </div>
