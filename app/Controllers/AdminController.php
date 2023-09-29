@@ -12,11 +12,43 @@ class AdminController extends BaseController
     {
         $this->productModel = new ProductModel();
     }
-
     public function Titi()
     {
       return view('admins/insert');
     }
+
+    public function delete($id)
+    {
+      $this->productModel->delete($data);
+
+      return redirect()->to('ux')->with('success','Product deleted successfully');
+    }
+    // AdminController.php
+
+public function showProducts()
+{
+    $productModel = new ProductModel();
+    $data['products'] = $productModel->findAll(); // Fetch all products from the database
+
+    return view('admins/products', $data); // Load the 'admins/products' view and pass the product data
+}
+public function edit($id)
+{
+  $data  = [
+    'name' => $this->request->getPost('name'),
+    'description' => $this->request->getPost('description'),
+    'image_url' => $this->request->getPost('image_url'),
+    'price' => $this->request->getPost('price'),
+    'reviews' => $this->request->getPost('reviews'),
+  ];
+  $this->productModel->edit($data);
+
+  return redirect()->to('ux')->with('success','Product created successfully');
+}
+
+
+
+
     public function create()
     {
       if ($this->request->getMethod() ==='post'){

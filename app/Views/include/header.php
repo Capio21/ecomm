@@ -10,7 +10,7 @@
   <title>Sixteen Clothing HTML Template</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php echo base_url('vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
 <!--
 
 TemplateMo 546 Sixteen Clothing
