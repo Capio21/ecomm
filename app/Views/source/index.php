@@ -21,7 +21,7 @@
   <?= $this->include('include/banner')?>
     <!-- Banner Ends Here -->
 
-    
+
 
     <?= $this->include('include/features')?>
 

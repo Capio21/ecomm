@@ -12,7 +12,7 @@
     <title>Sixteen Clothing - About Page</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(vendor/bootstrap/css/bootstrap.min.css)?>" rel="stylesheet">
 <!--
 
 TemplateMo 546 Sixteen Clothing
@@ -24,7 +24,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="<?php echo base_url(assets/css/fontawesome.css)?>">
     <link rel="stylesheet" href="<?php echo base_url(assets/css/templatemo-sixteen.css)?>">
-    <link rel="stylesheet" href="<?php echo base_url(assets/css/owl.css)?>">
+    <link rel="stylesheet" href="<?php echo base_url(assets/css/owl.css)?> ">
 
   </head>
 
