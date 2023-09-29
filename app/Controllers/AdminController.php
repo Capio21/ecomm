@@ -12,7 +12,7 @@ class AdminController extends BaseController
     {
         $this->productModel = new ProductModel();
     }
-    public function Titi()
+    public function insert()
     {
       return view('admins/insert');
     }
