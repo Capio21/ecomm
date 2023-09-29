@@ -64,7 +64,7 @@
 </div>
 <div class="center-container">
     <div class="table-container container mt-5">
-        <h1>Table Footwear</h1>
+        <h1>Products List</h1>
         <table class="table table-bordered">
             <thead class="thead-dark">
             <tr>
