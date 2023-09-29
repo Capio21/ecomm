@@ -9,6 +9,10 @@
 
     <!-- Custom CSS for center alignment and background -->
     <style>
+        *{
+          font-family: fantasy;
+          font-style: italic;
+        }
         /* Center-align the container */
         .center-container {
             display: flex;
@@ -26,12 +30,16 @@
             box-shadow: 0 0 0 10px rgba(0, 1, 4, 0.9);
 
         }
+
+
     </style>
 </head>
 <body>
+
 <div class="center-container">
     <div class="form-container container">
-        <h1>Create New Product</h1>
+        <h1> ADMINISTRATOR : <br>
+          Create New Product</h1>
         <form action="<?= base_url('create') ?>" method="post" enctype="multipart/form-data" onsubmit="return insertOrUpdateProduct()">
             <input type="hidden" id="productIndex" value="-1">
             <div class="form-group">
