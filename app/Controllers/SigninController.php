@@ -21,7 +21,7 @@ class SigninController extends BaseController
 
         if (empty($username) || empty($password)) {
             $session->setFlashdata('msg', 'Both username and password are required.');
-            return redirect()->to('/');
+            return redirect()->to('/first');
         }
 
         $data = $userModel->where('username', $username)->first();
@@ -35,7 +35,7 @@ class SigninController extends BaseController
                     'isLoggedin' => true
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/user');
+                return redirect()->to('/first');
 
             }
 

@@ -14,7 +14,7 @@
                 <?php if(isset($validation)): ?>
                     <div class="alert alert-warning"><?= $validation->listErrors() ?></div>
                 <?php endif; ?>
-                <form action="<?= base_url('/user/store') ?>" method="post">
+                <form action="<?= base_url('/') ?>" method="post">
                     <div class="form-group mb-3">
                         <input type="text" name="username" placeholder="Username" value="<?= set_value('username') ?>" class="form-control">
                     </div>

@@ -27,7 +27,7 @@ class AuthGuard implements FilterInterface
     {
         // Check if the user is not logged in
         if (!session()->get('isLoggedin')) {
-          return redirect()->to('/user');
+          return redirect()->to('/first');
       }
     }
 

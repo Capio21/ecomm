@@ -29,7 +29,7 @@ class UserController extends BaseController
               'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
           ];
           $userModel->save($data);
-          return redirect()->to('/signin');
+          return redirect()->to('/');
       } else {
           $data['validation'] = $this->validator;
           echo view('signup', $data);

@@ -12,9 +12,9 @@ class Home extends BaseController
     {
       return view('include/product');
     }
-    public function Home()
+    public function first()
     {
       return view('source/index');
     }
-    
+
 }
