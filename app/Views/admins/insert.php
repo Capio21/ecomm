@@ -203,6 +203,32 @@
     // Initial product table update
     updateProductTable();
     // Your JavaScript code here
+
+    function updateProductTable() {
+    const tableBody = document.getElementById("productTableBody");
+    tableBody.innerHTML = "";
+
+    for (let i = 0; i < products.length; i++) {
+        const product = products[i];
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${product.name}</td>
+            <td>${product.description}</td>
+            <td>
+                <img src="${product.image_url}" alt="Product Image">
+            </td>
+            <td>${product.price}</td>
+            <td>${product.reviews}</td>
+            <td>
+                <button class="btn btn-primary" onclick="editProduct(${i})">Edit</button>
+                <button class="btn btn-danger" onclick="deleteProduct(${i})">Delete</button>
+            </td>
+        `;
+        tableBody.appendChild(row);
+    }
+}
+
+
 </script>
 </body>
 </html>
