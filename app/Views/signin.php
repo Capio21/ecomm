@@ -41,7 +41,7 @@
                         <?= session()->getFlashdata('msg') ?>
                     </div>
                 <?php endif; ?>
-                <form action="<?php echo base_url(); ?>/signin/loginAut" method="post">
+                <form action="<?php echo base_url(); ?>/signin/loginAuth" method="post">
                     <div class="form-group mb-3">
                         <input type="text" name="username" placeholder="Username" value="<?= set_value('username') ?>" class="form-control" required>
                     </div>
