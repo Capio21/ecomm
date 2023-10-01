@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Controller\UserController;
 use App\Models\UserModel;
 
 class LoginController extends BaseController
@@ -13,7 +14,7 @@ class LoginController extends BaseController
   }
   public function signup()
   {
-      return view('signup'); 
+      return view('signup');
   }
 
 
