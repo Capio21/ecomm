@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>CodeIgniter Auth User Registration Example</title>
+
+    <style>
+        * {
+            font-family: fantasy;
+            font-style: italic;
+        }
+
+        /* Center-align the container */
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(125deg, #ffcccc, #000);
+        }
+
+        /* Style the form and table */
+        .form-container, .table-container {
+            background-color: rgba(155, 155, 155, 0.9); /* Light red background with transparency */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 0 10px rgba(0, 1, 4, 0.9);
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">

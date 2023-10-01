@@ -8,7 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 
      $routes->get('/first', 'Home::index');
      $routes->get('/product', 'Home::product');
-     $routes->get('/Home', 'Home::Home');
+     $routes->get('/first', 'Home::first');
      $routes->get('/ux', 'AdminController::insert');
      $routes->post('/create', 'AdminController::create');
      $routes->post('admins/edit/(:num)', 'AdminController::edit/$1');
