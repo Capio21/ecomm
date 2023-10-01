@@ -200,9 +200,8 @@
         }
     }
 
-    // Initial product table update
     updateProductTable();
-    // Your JavaScript code here
+
 
     function updateProductTable() {
     const tableBody = document.getElementById("productTableBody");
