@@ -13,5 +13,7 @@ use CodeIgniter\Router\RouteCollection;
      $routes->post('/create', 'AdminController::create');
      $routes->post('admins/edit/(:num)', 'AdminController::edit/$1');
      $routes->get('admins/delete/(:num)', 'AdminController::delete/$1');
-     $routes->get('Login/Register', 'UserController::register' ,['filter' => 'authGuard']);
-     $routes->get('Login/Signin', 'UserController::signin' ,['filter' => 'authGuard']); // You need to create this method in your controller
+     $routes->get('/register', '\App\Controllers\UserController::register');
+     $routes->post('/user/store', '\App\Controllers\UserController::store');
+     $routes->get('/', '\App\Controllers\SigninController::login');
+     $routes->post('/signin/loginAuth', '\App\Controllers\SigninController::loginAuth', ['filter' => 'authGuard']);

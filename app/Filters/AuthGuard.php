@@ -26,13 +26,9 @@ class AuthGuard implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         // Check if the user is not logged in
-        if (!session()->get('isLoggedIn')) {
-            // Redirect to the sign-in page
-            return redirect()->to('/signin');
-        }
-
-        // User is logged in, continue with the request
-        return $request;
+        if (!session()->get('isLoggedin')) {
+          return redirect()->to('/user');
+      }
     }
 
     /**
