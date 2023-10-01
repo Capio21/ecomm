@@ -12,3 +12,6 @@ $routes->get('/ux', 'AdminController::insert');
 $routes->post('/create', 'AdminController::create');
 $routes->post('admins/edit/(:num)', 'AdminController::edit/$1');
 $routes->get('admins/delete/(:num)', 'AdminController::delete/$1');
+$routes->get('Login/fPass', 'AdminController::fPass');
+$routes->get('Login/signup', 'UserController::signup');
+$routes->get('Login/login', 'UserController::index');

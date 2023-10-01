@@ -45,6 +45,11 @@ public function edit($id)
 
   return redirect()->to('ux')->with('success','Product created successfully');
 }
+public function fPass()
+{
+  return view('fPass');
+}
+
 
 
 
