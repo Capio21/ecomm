@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\ProductModel;
 class Home extends BaseController
 {
     public function index(): string
@@ -10,7 +10,10 @@ class Home extends BaseController
     }
     public function product()
     {
-      return view('include/product');
+      $productModel = new ProductModel();
+      $data['products'] = $productModel->findAll();
+       return view('include/product', $data);
+
     }
     public function first()
     {
