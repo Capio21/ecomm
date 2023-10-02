@@ -49,35 +49,35 @@ public function edit($id)
 
 
 
-
-    public function create()
-    {
-      if ($this->request->getMethod() ==='post'){
+public function create()
+{
+    if ($this->request->getMethod() === 'post') {
         $productModel = new ProductModel();
 
-
-
         $image = $this->request->getFile('image_url');
-        $image->move(ROOTPATH  .  'public/uploads');
-        $imagePath = 'uploads/' . $image->getName();
+        $imageName = $image->getName();
+        $image->move(ROOTPATH . 'public/uploads');
+        $imagePath = 'uploads/' . $imageName;
 
         $data = [
-          'name' => $this->request->getPost('name'),
-          'image_url' => $imagePath,
-          'price' => $this->request->getPost('price'),
+            'name' => $this->request->getPost('name'),
+            'description' => $this->request->getPost('description'),
+            'image_url' => $imagePath,
+            'price' => $this->request->getPost('price'),
+            'reviews' => $this->request->getPost('reviews'),
         ];
-        $productModel->insert($data);
-        return redirect()->to('ux')->with('success','Product created successfully');
-      }
-      $data  = [
-        'name' => $this->request->getPost('name'),
-        'description' => $this->request->getPost('description'),
-        'image_url' => $this->request->getPost('image_url'),
-        'price' => $this->request->getPost('price'),
-        'reviews' => $this->request->getPost('reviews'),
-      ];
-      $this->productModel->insert($data);
 
-      return redirect()->to('ux')->with('success','Product created successfully');
+        // Insert the data into the 'products' table
+        $inserted = $productModel->insert($data);
+
+        if ($inserted) {
+            return redirect()->to('ux')->with('success', 'Product created successfully');
+        } else {
+            return redirect()->to('ux')->with('error', 'Failed to create product');
+        }
     }
+
+    // Handle other cases or validation as needed
+}
+
 }

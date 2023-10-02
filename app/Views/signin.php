@@ -46,7 +46,7 @@
                         <input type="text" name="username" placeholder="Username" value="<?= set_value('username') ?>" class="form-control" required>
                     </div>
                     <div class="form-group mb-3">
-                        <input type="password" name="password" placeholder="Password" class="form-control" required>
+                        <input type="password" name="password" placeholder="Password" class="form-control" required >
                     </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-success">Login</button>

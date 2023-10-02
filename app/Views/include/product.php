@@ -9,7 +9,7 @@
         <a href="products.html">View all products <i class="fa fa-angle-right"></i></a>
       </div>
     </div>
-<?php if(isset($products)): ?>
+<?php if(isset($products)):?>
     <?php foreach ($products as $product): ?>
       <div class="col-md-4">
         <div class="product-item">

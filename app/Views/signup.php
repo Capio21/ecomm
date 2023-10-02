@@ -40,13 +40,13 @@
                 <?php endif; ?>
                 <form action="<?= base_url('/') ?>" method="post">
                     <div class="form-group mb-3">
-                        <input type="text" name="username" placeholder="Username" value="<?= set_value('username') ?>" class="form-control">
+                        <input type="text" name="username" placeholder="Username" value="<?= set_value('username') ?>" class="form-control" required>
                     </div>
                     <div class="form-group mb-3">
-                        <input type="password" name="password" placeholder="Password" class="form-control">
+                        <input type="password" name="password" placeholder="Password" class="form-control" required>
                     </div>
                     <div class="form-group mb-3">
-                        <input type="password" name="confirmpassword" placeholder="Confirm Password" class="form-control">
+                        <input type="password" name="confirmpassword" placeholder="Confirm Password" class="form-control" required>
                     </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-dark">Signup</button>
